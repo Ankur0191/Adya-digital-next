@@ -1,0 +1,8 @@
+https://calendly.com/adyadigitalofficial/free-consultation-call?fbclid=PAZXh0bgNhZW0CMTEAAafqgFWB1LLwl9rWh_7TBYJUVSYnD8n6pH1lQel2ZbR31lEgmbsRt3dfFOUrfA_aem_2VPHUFdG3VoxIY5mA-7OWQ
+
+
+above is calendly link and i need to integrate it EOD
+
+2. Change navbar layout
+3. Add footer
+4. Add Hashnode for blogs and Articles

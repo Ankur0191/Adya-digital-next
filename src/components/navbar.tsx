@@ -1,19 +1,16 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { AlignJustify, X } from "lucide-react";
-
 import Image from "next/image";
 import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
 
-
 interface NavbarProps {
-  scrollToWebsiteDesign: () => void;
-  scrollToGraphicDesign: () => void;
-  scrollToShopifyStores: () => void;
-  scrollToBrands: () => void;
-  scrollToServices: () => void; 
+  scrollToWebsiteDesign?: () => void;
+  scrollToGraphicDesign?: () => void;
+  scrollToShopifyStores?: () => void;
+  scrollToBrands?: () => void;
+  scrollToServices?: () => void;
 }
 
 const Navbar = ({
@@ -21,7 +18,7 @@ const Navbar = ({
   scrollToGraphicDesign,
   scrollToShopifyStores,
   scrollToBrands,
-  scrollToServices, 
+  scrollToServices,
 }: NavbarProps) => {
   const [isDropDownVisible, setIsDropDownVisible] = useState(false);
 
@@ -34,42 +31,38 @@ const Navbar = ({
   };
 
   return (
-    <div>
+    <div className="mb-10">
       <div className="p-6 md:p-10 flex items-center justify-between z-50">
         <div>
           <Link className="cursor-pointer" href="/">
             <Image
               priority
-              src="/logo/logo.svg"
-              alt="Logo"
+              src="https://i.ibb.co/Hp9d7KTq/Adya-Digital-Circle-Logo-Edge-To-Edge-Transparent-removebg-preview.png"
+              alt="Adya Digital Logo"
               width={100}
               height={100}
-              className="w-10 h-10 md:w-14 md:h-14"
+              className="w-10 h-10 md:w-14 md:h-14 object-contain"
             />
           </Link>
         </div>
+
         <div
-          className="cursor-pointer hidden 
-            md:flex space-x-10 items-center
-             text-slate-300 text-center 
-             bg-clip-text text-transparent 
-             bg-gradient-to-b from-neutral-50
-              to bg-neutral-400 bg-opacity-50"
+          className="cursor-pointer hidden md:flex space-x-10 items-center
+             text-slate-300 text-center bg-clip-text text-transparent 
+             bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50"
         >
-          <div onClick={scrollToWebsiteDesign} className="hover:text-gray-50">
+          <div onClick={() => scrollToWebsiteDesign?.()} className="hover:text-gray-50">
             Website Design
           </div>
-          <div onClick={scrollToGraphicDesign} className="hover:text-gray-50">
+          <div onClick={() => scrollToGraphicDesign?.()} className="hover:text-gray-50">
             Graphic Design
           </div>
-
-          <div onClick={scrollToShopifyStores} className="hover:text-gray-50">
+          <div onClick={() => scrollToShopifyStores?.()} className="hover:text-gray-50">
             Shopify Stores
           </div>
-          <div onClick={scrollToBrands} className="hover:text-gray-50">
+          <div onClick={() => scrollToBrands?.()} className="hover:text-gray-50">
             Brands
           </div>
-
           <Link href="/pricing" className="hover:text-gray-50">
             Pricing
           </Link>
@@ -77,28 +70,19 @@ const Navbar = ({
 
         <div className="flex md:hidden">
           {isDropDownVisible ? (
-            <div
-              onClick={toggleDropDown}
-              className="w-8 h-8 text-slate-300 cursor-pointer"
-            >
+            <div onClick={toggleDropDown} className="w-8 h-8 text-slate-300 cursor-pointer">
               <X />
-              <DropDownMenu
-                onClose={closeDropDown}
-              />
+              <DropDownMenu onClose={closeDropDown} />
             </div>
           ) : (
-            <AlignJustify
-              onClick={toggleDropDown}
-              className="w-8 h-8 text-slate-300 cursor-pointer"
-            />
+            <AlignJustify onClick={toggleDropDown} className="w-8 h-8 text-slate-300 cursor-pointer" />
           )}
         </div>
 
         <div className="hidden md:flex">
           <Link
             href="/contact"
-            className="
-            inline-flex h-12 animate-shimmer items-center justify-center 
+            className="inline-flex h-12 animate-shimmer items-center justify-center 
             rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
             bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors
              focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2
@@ -111,5 +95,5 @@ const Navbar = ({
     </div>
   );
 };
- 
+
 export default Navbar;

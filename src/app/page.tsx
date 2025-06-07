@@ -11,6 +11,7 @@ import Brands from "./brands";
 import Services from "./services";
 import { useRef } from "react";
 import FAQS from "./faq";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const websiteDesignRef = useRef<HTMLDivElement>(null);
@@ -88,6 +89,7 @@ export default function Home() {
           <Services />
         </div>
         <FAQS />
+        <Footer />
       </div>
     </div>
   );

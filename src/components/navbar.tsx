@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { AlignJustify, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import DropDownMenu from "./drop-down-menu";
 
@@ -33,16 +32,10 @@ const Navbar = ({
   return (
     <div className="mb-10">
       <div className="p-6 md:p-10 flex items-center justify-between z-50">
+        {/* Replaced logo image with bold text */}
         <div>
-          <Link className="cursor-pointer" href="/">
-            <Image
-              priority
-              src="https://i.ibb.co/Hp9d7KTq/Adya-Digital-Circle-Logo-Edge-To-Edge-Transparent-removebg-preview.png"
-              alt="Adya Digital Logo"
-              width={100}
-              height={100}
-              className="w-10 h-10 md:w-14 md:h-14 object-contain"
-            />
+          <Link href="/" className="cursor-pointer text-white font-extrabold text-xl md:text-2xl tracking-wide">
+            ADYA.DIGITAL
           </Link>
         </div>
 
@@ -51,17 +44,17 @@ const Navbar = ({
              text-slate-300 text-center bg-clip-text text-transparent 
              bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50"
         >
-          <div onClick={() => scrollToWebsiteDesign?.()} className="hover:text-gray-50">
-            Website Design
-          </div>
+          <Link href='/' className="hover:text-gray-50">
+            Home 
+          </Link>
           <div onClick={() => scrollToGraphicDesign?.()} className="hover:text-gray-50">
-            Graphic Design
+            Portfolio
           </div>
           <div onClick={() => scrollToShopifyStores?.()} className="hover:text-gray-50">
-            Shopify Stores
+            Custom sites
           </div>
           <div onClick={() => scrollToBrands?.()} className="hover:text-gray-50">
-            Brands
+            Clients 
           </div>
           <Link href="/pricing" className="hover:text-gray-50">
             Pricing

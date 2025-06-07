@@ -4,7 +4,7 @@ This is a modern web application built with Next.js and TypeScript, enabling use
 
 ### Installation
 
-1. Clone the repository: `https://github.com/Beka-Merebashvili/Digital-Marketing-Agency.git`
+1. Clone the repository: `https://github.com/Ankur0191/Adya-digital-next.git`
 2. Navigate to the project directory: `Digital-Marketing-Agency`
 3. Install dependencies: `npm install`
 
@@ -31,13 +31,13 @@ This is a modern web application built with Next.js and TypeScript, enabling use
 
 ## Links
 
-- Solution URL: [GitHub Code](https://github.com/Beka-Merebashvili/Digital-Marketing-Agency)
-- Live Site URL :[Vercel Live](https://digital-marketing-agency-psi.vercel.app)
+- Solution URL: [GitHub Code](https://github.com/Ankur0191/Adya-digital-next)
+- Live Site URL :[Vercel Live](https://adya-digital-next.vercel.app/)
 
 
 ## Author 
 
-- Linkdin [Beka Merebashvili](https://www.linkedin.com/in/beka-merebashvili/)
+- Linkdin [Ankur Mishra ](https://www.linkedin.com/in/ankur-mishra-cx/)
  
 
  

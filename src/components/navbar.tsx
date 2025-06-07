@@ -74,7 +74,7 @@ const Navbar = ({
 
         <div className="hidden md:flex">
           <Link
-            href="/contact"
+            href="https://calendly.com/adyadigitalofficial/free-consultation-call?fbclid=PAZXh0bgNhZW0CMTEAAafqgFWB1LLwl9rWh_7TBYJUVSYnD8n6pH1lQel2ZbR31lEgmbsRt3dfFOUrfA_aem_2VPHUFdG3VoxIY5mA-7OWQ"
             className="inline-flex h-12 animate-shimmer items-center justify-center 
             rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
             bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors

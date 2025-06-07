@@ -25,7 +25,7 @@ const FAQS = () => {
               What is the benefit of taking an integrated execution plan instead of individual services?
             </AccordionTrigger>
             <AccordionContent>
-              Imagine our integrated plan as a thali meal for your business. Why pick just one dish when you can enjoy the full spread? From tech and research to marketing—we serve everything together like an IPL team, not just one player.
+              Imagine our integrated plan as a thali meal for your business. Why pick just one dish when you can enjoy the full spread? From tech and research to marketing&mdash;we serve everything together like an IPL team, not just one player.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-2">
@@ -33,7 +33,7 @@ const FAQS = () => {
               I am a small business owner, how will Adya Digital help me?
             </AccordionTrigger>
             <AccordionContent>
-              For small businesses, we're the jugaad experts—mixing innovation with experience. We'll transform your 'small' into 'big' like a Bollywood-style makeover!
+              For small businesses, we&apos;re the jugaad experts&mdash;mixing innovation with experience. We&apos;ll transform your &apos;small&apos; into &apos;big&apos; like a Bollywood-style makeover!
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-3">
@@ -41,7 +41,7 @@ const FAQS = () => {
               I just have an idea, how can you help me?
             </AccordionTrigger>
             <AccordionContent>
-              We’ll be your business’s guiding star—validating your idea, researching the market, ensuring feasibility, and helping you brand and launch smoothly.
+              We&rsquo;ll be your business&rsquo;s guiding star&mdash;validating your idea, researching the market, ensuring feasibility, and helping you brand and launch smoothly.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
@@ -49,7 +49,7 @@ const FAQS = () => {
               How can Adya Digital provide all services under one roof?
             </AccordionTrigger>
             <AccordionContent>
-              We have an experienced in-house team, supported by domain experts and partner firms in legal, finance, and tech. It’s like having an entire startup ecosystem ready to go.
+              We have an experienced in-house team, supported by domain experts and partner firms in legal, finance, and tech. It&rsquo;s like having an entire startup ecosystem ready to go.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
@@ -77,19 +77,19 @@ const FAQS = () => {
           </h4>
           <div className="space-y-4 text-base md:text-lg text-gray-700 max-w-3xl mx-auto">
             <p>
-              <strong>Innovation & Creativity:</strong> Winds of change come; some build walls, others windmills. We thrive on creative problem-solving and future-ready ideas.
+              <strong>Innovation &amp; Creativity:</strong> Winds of change come; some build walls, others windmills. We thrive on creative problem-solving and future-ready ideas.
             </p>
             <p>
-              <strong>Speed & Efficiency:</strong> We know speed matters. Our execution is lean, fast, and always aligned with your goals.
+              <strong>Speed &amp; Efficiency:</strong> We know speed matters. Our execution is lean, fast, and always aligned with your goals.
             </p>
             <p>
-              <strong>The X-Factor:</strong> We help you identify what makes your business unique—and make it your superpower in the market.
+              <strong>The X-Factor:</strong> We help you identify what makes your business unique&mdash;and make it your superpower in the market.
             </p>
             <p>
-              <strong>End-to-End Integration:</strong> We ensure no gaps in execution by building solid frameworks that tie everything—from backend to marketing—together.
+              <strong>End-to-End Integration:</strong> We ensure no gaps in execution by building solid frameworks that tie everything&mdash;from backend to marketing&mdash;together.
             </p>
             <p>
-              We believe in "Go for Greatness." Business is built with sweat, courage, and heart. At Adya Digital, we bring our best—every single time.
+              We believe in &quot;Go for Greatness.&quot; Business is built with sweat, courage, and heart. At Adya Digital, we bring our best&mdash;every single time.
             </p>
           </div>
         </div>

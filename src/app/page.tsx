@@ -64,7 +64,7 @@ export default function Home() {
         </p>
 
         <Link
-          href={"/book"}
+          href={"https://calendly.com/adyadigitalofficial/free-consultation-call?fbclid=PAZXh0bgNhZW0CMTEAAafqgFWB1LLwl9rWh_7TBYJUVSYnD8n6pH1lQel2ZbR31lEgmbsRt3dfFOUrfA_aem_2VPHUFdG3VoxIY5mA-7OWQ"}
           className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2 mx-auto my-6 text-white"
         >
           Schedule a Call

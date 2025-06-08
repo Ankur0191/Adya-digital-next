@@ -6,33 +6,39 @@ import Footer from "@/components/footer";
 const services = [
   {
     id: 1,
-    name: "Web Development",
+    name: "Website Design & Development",
     description:
-      "From landing pages to full-stack web apps, we develop responsive and lightning-fast websites tailored to your brand's needs.",
+      "We build lightning-fast, responsive, and SEO-ready websites that are custom-crafted to reflect your brand and convert visitors into customers. Whether it's a landing page or a full-stack web app, we’ve got you covered.",
   },
   {
     id: 2,
-    name: "Graphic Design",
+    name: "Brand Identity & Design",
     description:
-      "We design logos, brand kits, and creative assets that give your business a unique and professional identity.",
+      "From logos to complete visual systems, we design brands that tell your story, connect emotionally, and stand out in crowded markets. Cohesive, modern, and unforgettable.",
   },
   {
     id: 3,
-    name: "Digital Marketing",
+    name: "Performance Marketing",
     description:
-      "SEO, Social Media, Performance Marketing – we make sure your audience finds you everywhere online.",
+      "We create data-backed ad campaigns across Meta, Google, and LinkedIn that focus on ROI, not just reach. Paid ads, remarketing, sales funnels — everything optimized for conversion.",
   },
   {
     id: 4,
-    name: "UI/UX Design",
+    name: "Social Media Strategy",
     description:
-      "We create beautiful, intuitive user interfaces backed by solid UX research that keeps users engaged.",
+      "We don’t just post — we build digital communities. From content calendars to influencer collaborations, we help you grow, engage, and monetize your social presence organically and via paid tactics.",
   },
   {
     id: 5,
-    name: "Brand Strategy",
+    name: "SEO & Content Marketing",
     description:
-      "Beyond just design—we help shape your story, voice, and mission into a compelling brand identity.",
+      "We help you rank, resonate, and generate leads. With targeted content strategies and advanced SEO practices, we improve visibility and bring in traffic that actually converts.",
+  },
+  {
+    id: 6,
+    name: "UI/UX & Product Design",
+    description:
+      "We design intuitive user experiences and stunning interfaces that keep users engaged and drive conversions. Built with research, tested with real users.",
   },
 ];
 
@@ -76,19 +82,43 @@ export default function PortfolioPage() {
               {selectedService.description}
             </p>
 
-            {/* Optional: Add Images, Stats, or CTA Buttons Here */}
-            <div className="mt-10">
+            {/* CTA Button */}
+            <div className="mt-6">
+              <a
+                href="https://calendly.com/adyadigitalofficial/free-consultation-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-3 px-6 rounded-lg transition"
+              >
+                Book a Free Consultation
+              </a>
+            </div>
+
+            {/* Why Adya Digital */}
+            <div className="mt-12">
               <div className="bg-white text-black rounded-xl p-6">
                 <h3 className="text-2xl font-semibold mb-2">
                   Why Choose Adya Digital?
                 </h3>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li>End-to-End Integration</li>
-                  <li>Innovative and Creative Approach</li>
-                  <li>Fast Turnaround Time</li>
-                  <li>Custom Solutions for Every Business</li>
-                  <li>Expert Team Across Domains</li>
+                  <li>Full-Service Team Across Design, Tech & Marketing</li>
+                  <li>Strategies Built for Results, Not Just Looks</li>
+                  <li>Agile, Transparent and Client-Centric</li>
+                  <li>Affordable Packages for Every Business Stage</li>
+                  <li>Hands-On Support from Start to Scale</li>
                 </ul>
+
+                {/* Second CTA Button */}
+                <div className="mt-6">
+                  <a
+                    href="https://calendly.com/adyadigitalofficial/free-consultation-call"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-3 px-6 rounded-lg transition"
+                  >
+                    Let's Discuss Your Project →
+                  </a>
+                </div>
               </div>
             </div>
           </div>

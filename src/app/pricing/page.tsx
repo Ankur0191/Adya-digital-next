@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { PiCheckCircleFill } from "react-icons/pi";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const plans = [
   {
     name: "Kickstart Plan",
-    price: "Setup: ₹7,499 | Monthly: ₹8,499",
+    price: "₹8,499/month",
     features: [
       "Responsive Website for All Screens",
       "Design + Development",
@@ -20,7 +21,7 @@ const plans = [
   },
   {
     name: "Growth Plan",
-    price: "Setup: ₹14,500 | Monthly: ₹17,499",
+    price: "₹17,499/month",
     features: [
       "Fully Responsive on All Devices",
       "React / Next.js / Tailwind Codebase",
@@ -35,7 +36,7 @@ const plans = [
   },
   {
     name: "Acceleration Plan",
-    price: "Setup: ₹32,000 | Monthly: ₹35,599",
+    price: "₹35,599/month",
     features: [
       "Custom Website & Software Development",
       "React / Next.js / Tailwind Codebase",
@@ -74,8 +75,12 @@ const Pricing = () => {
             ⏳ <strong>Valid Until:</strong> 31st March, 2025
           </p>
 
-          <p className="text-sm text-neutral-400 px-4 max-w-xl mb-10 italic">
+          <p className="text-sm text-neutral-400 px-4 max-w-xl mb-6 italic">
             We prefer calling it <strong>“Investment”</strong> — because you’ll definitely see returns.
+          </p>
+
+          <p className="text-sm text-yellow-400 italic max-w-xl mb-10">
+            ⚙️ The <strong>first month</strong> focuses on setup, strategy planning, and initial infrastructure — execution begins from Month 2.
           </p>
 
           {/* Pricing Cards Grid */}
@@ -124,91 +129,63 @@ const Pricing = () => {
           Individual Services
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto text-sm px-2">
-          {[
-            {
-              title: "Tech",
-              color: "text-emerald-400",
-              items: [
-                "Website – ₹8,999",
-                "Software Dev (Web & Mobile App) – ₹44,999",
-                "AI & ML Solutions – ₹60,999",
-                "Cybersecurity Audit – ₹18,999",
-                "Cloud Management – ₹6,000/month",
-                "IT Consultancy – ₹9,499",
-              ],
-            },
-            {
-              title: "Marketing",
-              color: "text-pink-400",
-              items: [
-                "SEO – ₹6,499/month",
-                "Social Media Marketing – ₹4,999/month",
-                "Email/WhatsApp Marketing – ₹4,595/month",
-                "Ad Campaigns – 5% of Ad Spend",
-                "Personal Branding – ₹3,499/month",
-              ],
-            },
-            {
-              title: "Design",
-              color: "text-yellow-400",
-              items: [
-                "Logo, Brochure, Business Card – ₹1,299",
-                "Pitch Deck – ₹1,549",
-                "Photo & Video Editing – ₹4,699",
-              ],
-            },
-            {
-              title: "Strategy & Research",
-              color: "text-blue-400",
-              items: [
-                "Strategy Consulting – ₹20,499",
-                "Competitor/Market Research – ₹6,499",
-              ],
-            },
-            {
-              title: "Content & Legal",
-              color: "text-purple-400",
-              items: [
-                "Copywriting – ₹1,942/month",
-                "Articles & Blogs – ₹2,499/month",
-                "Guest Posting – ₹1,699/month",
-                "Company Registration – ₹8,549",
-                "GST Filings – ₹1,999/month",
-                "Legal Compliances – ₹15,840",
-                "Fundraising & Investment Support – ₹16,640",
-              ],
-            },
-            {
-              title: "Miscellaneous",
-              color: "text-orange-400",
-              items: [
-                "HR – Hiring Candidates – ₹2,999",
-                "Event Management – ₹14,999",
-              ],
-            },
-          ].map((block, i) => (
-            <div
-              key={i}
-              className="bg-black/10 border border-neutral-800 hover:border-neutral-700 p-6 rounded-xl space-y-3 transition-all duration-300"
-            >
-              <h3 className={`text-xl font-semibold mb-3 border-b border-neutral-800 pb-2 ${block.color}`}>
-                {block.title}
-              </h3>
-              <ul className="text-neutral-300 space-y-2">
-                {block.items.map((item, idx) => (
-                  <li key={idx} className="leading-relaxed">
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        <div className="overflow-x-auto max-w-7xl mx-auto">
+          <table className="min-w-full border border-neutral-800 text-sm text-left text-neutral-300 rounded-xl overflow-hidden">
+            <thead className="bg-black/20 text-neutral-200">
+              <tr>
+                <th className="px-4 py-3">Category</th>
+                <th className="px-4 py-3">Service</th>
+                <th className="px-4 py-3">Starting Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                ["Tech", "Website", "₹8,999"],
+                ["Tech", "Software Dev (Web & Mobile App)", "₹44,999"],
+                ["Tech", "AI & ML Solutions", "₹60,999"],
+                ["Tech", "Cybersecurity Audit", "₹18,999"],
+                ["Tech", "Cloud Management", "₹6,000/month"],
+                ["Tech", "IT Consultancy", "₹9,499"],
+
+                ["Marketing", "SEO", "₹6,499/month"],
+                ["Marketing", "Social Media Marketing", "₹4,999/month"],
+                ["Marketing", "Email/WhatsApp Marketing", "₹4,595/month"],
+                ["Marketing", "Ad Campaigns", "5% of Ad Spend"],
+                ["Marketing", "Personal Branding", "₹3,499/month"],
+
+                ["Design", "Logo, Brochure, Business Card", "₹1,299"],
+                ["Design", "Pitch Deck", "₹1,549"],
+                ["Design", "Photo & Video Editing", "₹4,699"],
+
+                ["Strategy & Research", "Strategy Consulting", "₹20,499"],
+                ["Strategy & Research", "Competitor/Market Research", "₹6,499"],
+
+                ["Content & Legal", "Copywriting", "₹1,942/month"],
+                ["Content & Legal", "Articles & Blogs", "₹2,499/month"],
+                ["Content & Legal", "Guest Posting", "₹1,699/month"],
+                ["Content & Legal", "Company Registration", "₹8,549"],
+                ["Content & Legal", "GST Filings", "₹1,999/month"],
+                ["Content & Legal", "Legal Compliances", "₹15,840"],
+                ["Content & Legal", "Fundraising & Investment Support", "₹16,640"],
+
+                ["Miscellaneous", "HR – Hiring Candidates", "₹2,999"],
+                ["Miscellaneous", "Event Management", "₹14,999"],
+              ].map(([category, service, price], index) => (
+                <tr key={index} className="border-t border-neutral-800 hover:bg-black/20 transition-all">
+                  <td className="px-4 py-3 font-medium text-emerald-300">{category}</td>
+                  <td className="px-4 py-3">{service}</td>
+                  <td className="px-4 py-3 text-yellow-300">{price}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
 
         <div className="text-xs text-neutral-400 text-center mt-12">
-          All prices are starting prices and may vary based on requirements. GST applicable.
+          All prices are starting rates and may vary based on scope. GST applicable.
         </div>
+        <div className="mt-12"></div>
+        <Footer />
       </div>
     </>
   );

@@ -50,9 +50,9 @@ const Navbar = ({
           <Link href='/services' className="hover:text-gray-50">
             Services 
           </Link>
-          <div onClick={() => scrollToShopifyStores?.()} className="hover:text-gray-50">
+          <Link href='/portfolio' className="hover:text-gray-50">
             Portfolio
-          </div>
+          </Link>
           <div onClick={() => scrollToBrands?.()} className="hover:text-gray-50">
             Clients 
           </div>

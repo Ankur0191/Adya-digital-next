@@ -57,17 +57,17 @@ export default function Home() {
       <Spotlight className="hidden md:flex md:-top-80 left-80" fill="white" />
       <div className="p-4 mx-auto relative z-10 w-full pt-10 md:pt-20 px-2">
         <div className="text-4xl pb-5 md:text-7xl px-6 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to bg-neutral-400 bg-opacity-50">
-          Powering Brands with <br /> Digital Intelligence
+          Empowering Businesses <br /> Through Digital Innovation
         </div>
         <p className="mt-4 text-lg font-normal text-neutral-300 max-w-xl text-center mx-auto px-4">
-          At Adya Digital, we blend strategy, creativity, and technology to elevate your brand in the digital space. From marketing to design to full IT solutions — we’ve got you covered.
+          At Adya Digital, we specialize in crafting tailored digital marketing strategies that drive real results. Whether it’s SEO, social media, web design, or branding — we help your business grow online with clarity and purpose.
         </p>
 
         <Link
           href={"https://calendly.com/adyadigitalofficial/free-consultation-call?fbclid=PAZXh0bgNhZW0CMTEAAafqgFWB1LLwl9rWh_7TBYJUVSYnD8n6pH1lQel2ZbR31lEgmbsRt3dfFOUrfA_aem_2VPHUFdG3VoxIY5mA-7OWQ"}
-          className="cursor-pointer flex items-center justify-center border rounded-full w-48 p-2 mx-auto my-6 text-white"
+          className="cursor-pointer flex items-center justify-center border rounded-full w-60 p-2 mx-auto my-6 text-white"
         >
-          Schedule a Call
+          Get Free Consultation
         </Link>
 
         <div className="w-full pt-20">

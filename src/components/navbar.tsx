@@ -47,11 +47,11 @@ const Navbar = ({
           <Link href='/' className="hover:text-gray-50">
             Home 
           </Link>
-          <div onClick={() => scrollToGraphicDesign?.()} className="hover:text-gray-50">
-            Portfolio
-          </div>
+          <Link href='/services' className="hover:text-gray-50">
+            Services 
+          </Link>
           <div onClick={() => scrollToShopifyStores?.()} className="hover:text-gray-50">
-            Custom sites
+            Portfolio
           </div>
           <div onClick={() => scrollToBrands?.()} className="hover:text-gray-50">
             Clients 
